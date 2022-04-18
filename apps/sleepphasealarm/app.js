@@ -1,5 +1,5 @@
 const BANGLEJS2 = process.env.HWVERSION == 2; //# check for bangle 2
-const alarms = require("Storage").readJSON("alarm.json",1)||[];
+const alarms = require("Storage").readJSON("sched.json",1)||[];
 const active = alarms.filter(a=>a.on);
 
 // Sleep/Wake detection with Estimation of Stationary Sleep-segments (ESS):
